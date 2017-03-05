@@ -21,9 +21,9 @@ To use your iPhone as a controller, you'll also need [TouchOSC](https://hexler.n
 
 ## Built With
 
-* Puredata
-* TouchOSC
-* Osculator
+* [Puredata](http://puredata.info/downloads/pure-data)
+* [TouchOSC](https://hexler.net/software/touchosc)
+* [Osculator](https://osculator.net)
 
 ## Authors
 
