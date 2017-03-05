@@ -7,16 +7,17 @@ background_radiationscope - an oscilloscope to use alongside a static audio piec
 
 ## Getting Started
 
-Clone the repository and open any of the non-README files in Puredata - each is an individual project.
+Clone the repository and open any of the non-README files in Puredata. background_radiationscope works independently; simpleMIDI for pd patch\.oscd is supplementary to  pd motion tracking patch.pd.
 
 To run background_radiationscope, first check the box beside IN/OUT in the Pd-extended window which opens on launching the program; in the window named 'background_radiationscope.pd' edit the text 'open background_radiation.wav' (press cmd+E to enter edit mode and double-click on the text) to 'open' and the path to an audio file on your computer, pressing cmd+E to exit edit mode once finished. 
 Now to start the program: go into the window named 'scope' and click the large orange toggle labelled 'on/off' to the right, and a large window labelled 'GEM' will open; when the audio starts so should the video. There will be a 30-second delay, but to bypass this click on the '1' box below 'del 30000' in the background_radiationscope window. Once it's running, have a play around with the various controls in the 'scope' window, to change the shape, size, angle and composition of the video material.
 
-To run the motion tracking patch, click the toggle
+The motion tracking patch runs as soon as it's opened and loaded. The best way to use it is to play around with the various controls to change tempo, register and a range of other parameters, but to get any sound out you'll need to hook up each MIDI output to corresponding MIDI inputs on software instruments in a DAW project. Although not essential, if you want to use your iPhone as a controller you'll need to replace the IP address and port numbers on the top right of the patch with those of your own phone (incoming and outgoing port numbers are accessible in TouchOSC settings) and computer (in the puredata patch, press cmd+E to enter Edit mode; double-click on the text, replace it and cmd+E again). You'll also need to open ``` simpleMIDI for pd patch\.oscd ``` and set up your MIDI routing with the same port numbers there, as well as setting up the appropriately mapping MIDI channels between the controls in Osculator and on your phone, and between the puredata patch and your DAW. Nobody said this would be easy.
 
 ### Prerequisites
 
-To run these programs you'll need to have installed Puredata, downloadable free from http://puredata.info/downloads/pure-data. Once installed these programs should be able to run without any extra fiddling.
+To run these programs you'll need to have installed [Puredata](http://puredata.info/downloads/pure-data).
+To use your iPhone as a controller, you'll also need [TouchOSC](https://hexler.net/software/touchosc) and [Osculator](https://osculator.net).
 
 ## Built With
 
